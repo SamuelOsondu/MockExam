@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block title %} chooseyear {% endblock %}
+
+{% block body %}
+
+<section data-bs-version="5.1" class="info3 cid-tmChqhuTFf" id="info3-1s">
+
+    <div class="mbr-overlay" style="opacity: 0.9; background-color: #228B22;"></div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="card col-12 col-lg-10">
+                <div class="card-wrapper">
+                    <div class="card-box align-center">
+                        <h4 class="card-title mbr-fonts-style align-center mb-4 display-1"><strong>Osondu's powered mock exam </strong></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section data-bs-version="5.1" class="features5 cid-tmCgZ0Y6Wo" id="features6-1r">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="card col-12 col-lg-6">
+                <div class="card-wrapper mbr-flex">
+                    <div class="card-box align-left">
+
+                        <h5 class="card-title mbr-fonts-style align-left mb-3 display-5"><strong>Year One</strong></h5>
+
+                        <div class="mbr-section-btn"><a href="{{url_for('first_year')}}" class="btn btn-success-outline display-4">Take Mock Exam</a></div>
+                    </div>
+                    <div class="img-wrapper img1 align-center">
+                        <span class="mbr-iconfont socicon-hackernews socicon"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card col-12 col-lg-6">
+                <div class="card-wrapper mbr-flex">
+                    <div class="card-box align-left">
+
+                        <h5 class="card-title mbr-fonts-style align-left mb-3 display-5"><strong>Year Two</strong></h5>
+
+                        <div class="mbr-section-btn"><a href="{{ url_for('second_year') }}" class="btn btn-danger-outline display-4">Take Mock Exam</a></div>
+                    </div>
+                    <div class="img-wrapper img2 align-center">
+                        <span class="mbr-iconfont mobi-mbri-users mobi-mbri"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
